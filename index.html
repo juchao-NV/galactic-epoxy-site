@@ -32,29 +32,25 @@
             fetchpriority="high"
           />
         </a>
-        <nav class="nav" aria-label="Primary">
-          <a href="#services">Services</a>
-          <a href="#process">Process</a>
-          <a href="#faq">FAQ</a>
-          <a class="btn btn--small btn--ghost" href="#quote">Request a quote</a>
+        <nav class="nav-menu" aria-label="Primary">
+          <button
+            type="button"
+            class="nav-menu__toggle"
+            id="nav-menu-button"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-controls="nav-dropdown"
+          >
+            <span class="nav-menu__toggle-text">Menu</span>
+            <span class="nav-menu__chevron" aria-hidden="true"></span>
+          </button>
+          <div id="nav-dropdown" class="nav-menu__dropdown" role="region" aria-label="Page sections" hidden>
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#faq">FAQ</a>
+            <a class="nav-menu__cta" href="#quote">Request a quote</a>
+          </div>
         </nav>
-        <button
-          type="button"
-          class="nav-toggle"
-          aria-expanded="false"
-          aria-controls="nav-drawer"
-          aria-label="Open menu"
-        >
-          <span class="nav-toggle__bar" aria-hidden="true"></span>
-          <span class="nav-toggle__bar" aria-hidden="true"></span>
-          <span class="nav-toggle__bar" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div id="nav-drawer" class="nav-drawer" hidden>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#faq">FAQ</a>
-        <a href="#quote">Request a quote</a>
       </div>
     </header>
 
